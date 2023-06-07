@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" type="image/x-icon" href="img/favicon.png">
+    <title>Ismael Chaves | Portifolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="index.html">Ismael Chaves</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MIM</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULO</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">PROJETOS</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTATO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="img/Perfil.jpg" alt="Imagem de Perfil">
+            </div>
+            <h1>Ismael Chaves</h1>
+            <h2>Desenvolvedor Full-Stack</h2>
+            <div class="redes">
+                <a href="https://www.linkedin.com/in/ismael-oficial/" target="_blank">
+                    <i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://github.com/Ismael-Oficial" target="_blank">
+                    <i class="fa-brands fa-github"></i></a>
+                <a href="https://www.instagram.com/ismaelchaves2001/" target="_blank">
+                    <i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mim</h2>
+            <p><span>Olá Mundo! Eu sou Ismael</span> tenho 21 anos, sou estudante em desenvolvimento web no Instituto
+                PROA onde busco me capacitar para ingressar no mercado de trabalho.</p> <br>
+            <p>Programar pra mim é uma paixão, conheci esse universo em 2019 quando cursei Desenvolvimento de Sistemas
+                na Etec e me formei em 2020, de lá pra cá estou buscando cada vez mais me aprimorar nesse mundo
+                tecnológico para poder contrinuir como desenvolvedor júnior.</p> <br>
+            <p>Me considero uma pessoa determinada e desafios não me fazem desistir facilmente, acredito fortemente que
+                tudo é possível com foco, determinação e estudos.</p>
+
+            <div class="fila">
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Aniversário</strong>
+                            10-07-2001
+                        </li>
+                        <li>
+                            <strong>Telefone</strong>
+                            (11) 96731-1534
+                        </li>
+                        <li>
+                            <strong>E-mail</strong>
+                            ismaelchaves2001@outlook.com
+                        </li>
+                        <!--li>
+                            <strong>Website</strong>
+                            www.example.com
+                        </li-->
+                        <li>
+                            <strong>Endereço</strong>
+                            São Paulo, São Paulo
+                        </li>
+                        <li>
+                            <strong>Cargo</strong>
+                            <span>ESTUDANTE</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col">
+                    <h3>Interesses</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>JOGOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>MUSICA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-plane"></i>
+                            <span>VIAJAR</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-bicycle"></i>
+                            <span>ESPORTES</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-book"></i>
+                            <span>ESTUDAR</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa fa-music"></i>
+                            <span>TOCAR</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-microphone"></i>
+                            <span>CONVERSA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa fa-paint-brush"></i>
+                            <span>DESENHAR</span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <button id="BtnDownload" onclick="DownloadCV()">
+                Download CV <i class="fa-solid fa-download"></i>
+                <span class="overlay"></span>
+            </button>
+        </div>
+    </section>
+
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Skills</h2>
+            <div class="fila">
+                <div class="col">
+                    <h3>Hard Skills</h3>
+                    <div class="skill">
+                        <span>Javascript</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>35%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>HTML & CSS</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>React</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>25%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>MySQL</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>30%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>JAVA</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>15%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <h3>Soft Skills</h3>
+                    <div class="skill">
+                        <span>Comunicação</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Trabalho em Equipo</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Liderança</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>85%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Inteligência emocional</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>65%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Dedicação</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>95%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculo</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Capacitações</h3>
+                    <div class="item izq">
+                        <h4>ETEC PAULISTANO</h4>
+                        <span class="casa">Desenvolvimento de Sistemas</span>
+                        <span class="fecha">2019 - 2020</span>
+                        <p>O curso habilita profissionais técnicos de nível médio em Desenvolvimento de Sistemas,
+                            visando suprir a demanda do mercado por profissionais qualificados para atuarem em
+                            programação e desenvolvimento de software com condições técnico-tecnológicas.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>INSTITUTO PROA</h4>
+                        <span class="casa">Desenvolvimento Web Java</span>
+                        <span class="fecha">2023 - 2023</span>
+                        <p>Com duração de 6 meses o PROA-PROFISSÃO é um programa que desenvolve as competências técnicas
+                            do aluno em Programação Java por meio de trabalho em grupo, vivências corporativas, projetos
+                            e atividades. </p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>ESCOLA DA NUVEM</h4>
+                        <span class="casa">AWS Fundamentos</span>
+                        <span class="fecha">2023 - 2023</span>
+                        <p>O AWS Fundamentos da Escola da Nuvem é um programa rápido, 100% online, de curta duração, com
+                            o principal objetivo de introduzir os principais conceitos e serviços da nuvem AWS, dividido
+                            em aulas teóricas, laboratórios no ambiente AWS, atividades práticas e quizzes de revisão.
+                        </p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col derecha">
+                    <h3>Projetos Desenvolvidos</h3>
+                    <div class="item der">
+                        <h4>TCC FINAL</h4>
+                        <span class="casa">Projeto JPEG</span>
+                        <span class="fecha">2019 - 2020</span>
+                        <p>JPEG é um projeto desenvolvido na ETEC
+                            Paulistano onde foi criado um sistema de
+                            Cadastro e Gerenciamento em CRUD MVC.
+                            Nesse projeto atuei como desenvolvedor FullStack desenvolvendo toda a estrutura do
+                            Projeto e principais funcionalidades.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>DEMODAY</h4>
+                        <span class="casa">Projeto AMEI</span>
+                        <span class="fecha">2023 - 2023</span>
+                        <p>A AMEI é um projeto realizado no SENAC onde
+                            visa profissionalizar e dar visibilidade ao
+                            microempreendedor periférico através de tecnologias Web. Nesse projeto
+                            atuei como Front-End desenvolvendo as páginas
+                            do site, logo e design.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>PROJETO FINAL</h4>
+                        <span class="casa">Projeto Website</span>
+                        <span class="fecha">2023 - 2023</span>
+                        <p>Desenvolvimento de um website (html, css, imagens) contendo currículos e a
+                            implantação de um ou mais serviços na nuvem AWS, com rede de entrega de conteúdo,
+                            com baixa latência, com segurança, e armazenamento durável, para atender a demanda
+                            de 11 milhões de requisições por mês.
+                        </p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>PORTFOLIO</h2>
+            <div class="galeria">
+                <div class="projeto">
+                    <img src="img/Projeto1.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Projeto Demoday</h3>
+                        <p>Ver Projeto</p>
+                    </div>
+                </div>
+                <div class="projeto">
+                    <img src="img/Projeto3.png" alt="">
+                    <div class="overlay">
+                        <h3>Galeria de Fotos</h3>
+                        <p>Ver Projeto</p>
+                    </div>
+                </div>
+                <div class="projeto">
+                    <img src="img/Projeto4.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Calculadora</h3>
+                        <p>Ver Projeto</p>
+                    </div>
+                </div>
+                <div class="projeto">
+                    <img src="img/Projeto2.png" alt="">
+                    <div class="overlay">
+                        <h3>Instagram React</h3>
+                        <p>Ver Projeto</p>
+                    </div>
+                </div>
+                <div class="projeto">
+                    <img src="img/Projeto5.jpg" alt="">
+                    <div class="overlay">
+                        <h3>PET SHOP</h3>
+                        <p>Ver Projeto</p>
+                    </div>
+                </div>
+                <div class="projeto">
+                    <img src="img/Projeto6.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Calculadora IMC</h3>
+                        <p>Ver Projeto</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>CONTACTO</h2>
+            <div class="fila">
+                <div class="col">
+                    <input type="text" placeholder="Nome Completo">
+                    <input type="email" placeholder="E-mail de Contato">
+                    <input type="text" placeholder="Assunto">
+                    <textarea cols="30" rows="10" placeholder="Mensagem"></textarea>
+                    <button>
+                        Enviar Mensagem<i class="fa-solid fa-paper-plane"></i>
+                        <span class="overlay"></span>
+                    </button>
+                </div>
+                <div class="col">
+                    <img src="img/localmaps.png" alt="">
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                São Paulo, São Paulo
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-mobile-screen"></i>
+                                Telefone: (11) 96731-1534
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                Email: ismaelchaves2001@outlook.com
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="https://www.linkedin.com/in/ismael-oficial/" target="_blank">
+                <i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://github.com/Ismael-Oficial" target="_blank">
+                <i class="fa-brands fa-github"></i></a>
+            <a href="https://www.instagram.com/ismaelchaves2001/" target="_blank">
+                <i class="fa-brands fa-instagram"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
