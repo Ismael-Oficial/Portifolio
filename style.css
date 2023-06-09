@@ -487,6 +487,10 @@ html{
     flex-wrap: wrap;
     justify-content: space-around;
 }
+.portfolio .galeria a{
+    text-decoration: none;
+    color: #fff;
+}
 .portfolio .galeria .projeto{
     position: relative;
     max-width: 340px;
