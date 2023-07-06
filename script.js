@@ -37,5 +37,5 @@ window.onscroll = function(){
 
 function DownloadCV(){
     var BtnDownload = document.getElementById('BtnDownload');
-    BtnDownload = location.href = "https://drive.google.com/file/d/17u0mDXNmRUPmp0X1Tni8_DC9CzZ2nT4e/view"
+    BtnDownload = location.href = "https://drive.google.com/file/d/1qFzjs5-NSk1XZpfO9F4QI9Ob6qmBi_0m/view?usp=sharing"
 }
