@@ -133,10 +133,11 @@ html{
 }
 .sobremi .fila{
     display: flex;
+    justify-content: center;
 }
 .sobremi .fila .col
 {
-    width: 50%;
+    width: 65%;
 }
 .sobremi .fila .col h3{
     font-size: 28px;
